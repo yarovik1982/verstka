@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    .swiper-button-prev,.swiper-button-next {
+        opacity: 0;
+        transition: all .3s linear;
+    }
+    .mySwiper:hover .swiper-button-next{
+        opacity: 1;
+    }
+    .mySwiper:hover .swiper-button-prev{
+        opacity: 1;
+    }
+    
+</style>
+
+<body>
+    <nav class="main_page__navbar">
+        <ul>
+            <li>Таблица</li>
+            <li>Форма</li>
+            <li>Галерея</li>
+        </ul>
+    </nav>
+    <section class="main_page__content_box">
+        <div class="main_page__name_block">
+            <div class="main_page__name_block__first_text">
+                <span>Главная</span>
+                <span class="active">&#47;</span>
+                <span>Тестовое задание</span>
+            </div>
+            <h1>Тестовое задание</h1>
+        </div>
+        <section class="main_page__table_section">
+            <div class="main_page__table_section__text_block">
+                <h2>Таблица</h2>
+                <p>Должна быть адаптивной, без дублирования информации.</p>
+            </div>
+            <table class="main_page__table_section__table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Материал</th>
+                        <th>Размер</th>
+                        <th>Цена</th>
+                        <!-- <th></th> -->
+                    </tr>
+                </thead>
+                <tr>
+                    <td data-label="Название"><span>Стеновой паркет</span></td>
+                    <td data-label="Материал"><span>Ольха</span></td>
+                    <td data-label="Размер"><span>13 × 78 × 300 мм</span></td>
+                    <td data-label="Цена"><span>52 ₽</span><button class="button">В корзину</button></td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Название"><span>Стеновой паркет</span></td>
+                    <td data-label="Материал"><span>Ольха</span></td>
+                    <td data-label="Размер"><span>13 × 78 × 600 мм</span></td>
+                    <td data-label="Цена"><span>112 ₽</span><button class="button">В корзину</button></td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Название"><span>Доска для пола, сорт А</span></td>
+                    <td data-label="Материал"><span>Лиственница</span></td>
+                    <td data-label="Размер"><span>27 × 134 × 2000 мм</span></td>
+                    <td data-label="Цена"><span>1062 ₽</span><button class="button">В корзину</button></td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td data-label="Название"><span>Вагонка</span></td>
+                    <td data-label="Материал"><span>Термо-абаш</span></td>
+                    <td data-label="Размер"><span>19 × 90 × 2000 мм</span></td>
+                    <td data-label="Цена"><span>1009 ₽</span><button class="button">В корзину</button></td>
+                    <!-- <td></td> -->
+                </tr>
+            </table>
+        </section>
+        <section class="main_page__table_section_two">
+            <div class="main_page__table_section_two__text_block">
+                <h2>Галерея</h2>
+                <p>Фильтры должны фильтровать изображения без перезагрузки. Адаптивность: между реперными точками —
+                    пропорциональное масштабирование, далее уменьшение кол-ва фото в строке. Пролистывание должно быть
+                    по 8 фото (страницами) для дектопа, по 4 фото на мобилке. Стрелки появляются только при наведении на
+                    блок с фото. </p>
+            </div>
+        </section>
+    </section>
+    <section id="galery" class="galery">
+        <div class="container">
+            <div class="filter">
+                <button class="filter-btn filter-btn--active">Бани</button>
+                <button class="filter-btn">Сауны</button>
+                <button class="filter-btn">Хаммамы</button>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(img/photo1.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo2.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo3.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo4.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo5.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo6.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo7.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo8.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo1.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo2.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo3.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo4.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo5.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo6.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo7.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/photo8.png)"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script> -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html
