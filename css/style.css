@@ -378,7 +378,7 @@ td:last-child {
 }
 .filter-btn {
   border: 0;
-  padding: 8px 16px;
+  padding: 8px 8px;
   transition: all .3s linear;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
@@ -398,7 +398,7 @@ td:last-child {
   background-color: rgb(57, 57, 255);
 }
 .filter-btn:not(:first-child){
-  margin-left: 16px;
+  margin-left: 8px;
 }
 
 .swiper {

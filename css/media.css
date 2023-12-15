@@ -58,6 +58,8 @@
    .galery{
      height: 275px;
    }
+   .filter-btn {
+  }
  }
  @media(max-width:381px){
    .galery{
